@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME — A Private Residence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #0E0D0C;
+    --charcoal: #1A1815;
+    --ivory: #F6F3ED;
+    --gold: #B08D57;
+    --gold-soft: rgba(176,141,87,0.35);
+    --taupe: #948A7C;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:'Manrope', sans-serif;
+    background:var(--ivory);
+    color:var(--ink);
+    font-weight:300;
+  }
+
+  h1,h2,h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+    letter-spacing:0.01em;
+  }
+
+  .eyebrow{
+    font-family:'Manrope', sans-serif;
+    font-size:0.72rem;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:500;
+  }
+
+  img{display:block; width:100%; height:100%; object-fit:cover;}
+
+  /* NAV */
+  nav{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:200;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.4rem 6%;
+    background:linear-gradient(to bottom, rgba(14,13,12,0.55), transparent);
+  }
+
+  .logo{
+    font-family:'Cormorant Garamond', serif;
+    font-size:1.5rem;
+    color:var(--ivory);
+    letter-spacing:0.08em;
+  }
+
+  .nav-links{
+    display:flex;
+    gap:2.4rem;
+    list-style:none;
+  }
+
+  .nav-links a{
+    text-decoration:none;
+    color:var(--ivory);
+    font-size:0.8rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    opacity:0.85;
+    transition:opacity 0.25s ease;
+  }
+
+  .nav-links a:hover{opacity:1;}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:flex-end;
+    overflow:hidden;
+  }
+
+  .hero img{
+    position:absolute;
+    inset:0;
+    filter:brightness(0.62);
+  }
+
+  .hero-content{
+    position:relative;
+    z-index:2;
+    color:var(--ivory);
+    padding:0 6% 5.5rem;
+    max-width:700px;
+  }
+
+  .hero h1{
+    font-size:clamp(2.8rem, 6.5vw, 5rem);
+    line-height:1.05;
+    margin:1rem 0 1.4rem;
+    font-style:italic;
+  }
+
+  .hero p{
+    font-size:1.05rem;
+    line-height:1.7;
+    color:rgba(246,243,237,0.82);
+    max-width:480px;
+    font-weight:300;
+  }
+
+  .gold-line{
+    width:56px;
+    height:1px;
+    background:var(--gold);
+    margin:1.6rem 0;
+  }
+
+  /* INTRO STATEMENT */
+  .statement{
+    padding:8rem 6%;
+    max-width:820px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  .statement .eyebrow{display:block; margin-bottom:1.6rem;}
+
+  .statement h2{
+    font-size:clamp(1.8rem, 3.5vw, 2.6rem);
+    line-height:1.4;
+    font-weight:400;
+    color:var(--charcoal);
+  }
+
+  /* ROOM SECTIONS */
+  .room{
+    display:flex;
+    min-height:92vh;
+    align-items:stretch;
+  }
+
+  .room-media{
+    flex:1 1 55%;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .room-info{
+    flex:1 1 45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:5rem 5rem;
+    background:var(--charcoal);
+    color:var(--ivory);
+  }
+
+  .room.reverse{flex-direction:row-reverse;}
+
+  .room-index{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:1.1rem;
+    color:var(--gold);
+    margin-bottom:0.6rem;
+  }
+
+  .room-info h2{
+    font-size:clamp(2.2rem, 4vw, 3.2rem);
+    margin-bottom:1.4rem;
+    color:var(--ivory);
+  }
+
+  .room-info p{
+    font-size:1rem;
+    line-height:1.85;
+    color:rgba(246,243,237,0.75);
+    max-width:44ch;
+    margin-bottom:1.8rem;
+    font-weight:300;
+  }
+
+  .feature-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:0.7rem;
+  }
+
+  .feature-list li{
+    font-size:0.85rem;
+    letter-spacing:0.03em;
+    color:var(--taupe);
+    padding-left:1.2rem;
+    position:relative;
+  }
+
+  .feature-list li::before{
+    content:'';
+    position:absolute;
+    left:0; top:0.5em;
+    width:6px; height:1px;
+    background:var(--gold);
+  }
+
+  /* room alternating backgrounds for variety */
+  .room:nth-child(even) .room-info{background:var(--ink);}
+
+  /* CLOSING CTA */
+  .closing{
+    position:relative;
+    padding:10rem 6%;
+    text-align:center;
+    overflow:hidden;
+    background:var(--charcoal);
+    color:var(--ivory);
+  }
+
+  .closing h2{
+    font-size:clamp(2.2rem, 4.5vw, 3.6rem);
+    font-style:italic;
+    margin:1.2rem 0 2rem;
+  }
+
+  .closing .gold-line{margin-left:auto; margin-right:auto;}
+
+  .cta-btn{
+    display:inline-block;
+    margin-top:1rem;
+    padding:1rem 2.6rem;
+    border:1px solid var(--gold);
+    color:var(--ivory);
+    text-decoration:none;
+    font-size:0.8rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    transition:background 0.3s ease, color 0.3s ease;
+  }
+
+  .cta-btn:hover{background:var(--gold); color:var(--ink);}
+
+  footer{
+    background:var(--ink);
+    color:rgba(246,243,237,0.5);
+    text-align:center;
+    padding:2.5rem 6%;
+    font-size:0.78rem;
+    letter-spacing:0.05em;
+  }
+
+  footer span{color:var(--gold);}
+
+  @media (max-width:860px){
+    .nav-links{display:none;}
+    .room, .room.reverse{flex-direction:column;}
+    .room-media{height:60vh;}
+    .room-info{padding:3.5rem 7%;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">HOME</div>
+  <ul class="nav-links">
+    <li><a href="#bedroom">Bedroom</a></li>
+    <li><a href="#bathroom">Bathroom</a></li>
+    <li><a href="#kitchen">Kitchen</a></li>
+    <li><a href="#living">Living Room</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <img src="https://images.unsplash.com/photo-1757359056339-22968344cce6?fm=jpg&q=80&w=2000&auto=format&fit=crop" alt="Modern luxury home exterior at dusk">
+  <div class="hero-content">
+    <span class="eyebrow">A Private Residence</span>
+    <h1>Every room, a quiet luxury.</h1>
+    <p>A home built on restraint and craft — where light, material, and space are chosen with the same care as everything you own.</p>
+  </div>
+</section>
+
+<section class="statement">
+  <span class="eyebrow">Philosophy</span>
+  <h2>We believe a home should not announce itself. It should simply feel right — in the weight of a door, the warmth of a surface, the way morning light falls across a room.</h2>
+</section>
+
+<section class="room" id="bedroom">
+  <div class="room-media">
+    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Luxury bedroom with upholstered bed and chandelier">
+  </div>
+  <div class="room-info">
+    <div class="room-index">01 — Rest</div>
+    <h2>The Bedroom</h2>
+    <p>An upholstered headboard, soft linen, and light that dims to almost nothing. The bedroom is designed for one purpose only — to let the day go.</p>
+    <ul class="feature-list">
+      <li>Hand-finished upholstery</li>
+      <li>Layered ambient lighting</li>
+      <li>Floor-to-ceiling city views</li>
+    </ul>
+  </div>
+</section>
+
+<section class="room reverse" id="bathroom">
+  <div class="room-media">
+    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Luxury bathroom with modern vanity and shower">
+  </div>
+  <div class="room-info">
+    <div class="room-index">02 — Ritual</div>
+    <h2>The Bathroom</h2>
+    <p>Stone, steam, and silence. Every fixture is chosen for how it feels in the hand, not just how it looks — because a ritual deserves better than an afterthought.</p>
+    <ul class="feature-list">
+      <li>Natural stone surfaces</li>
+      <li>Rain shower & soaking tub</li>
+      <li>Underfloor heating</li>
+    </ul>
+  </div>
+</section>
+
+<section class="room" id="kitchen">
+  <div class="room-media">
+    <img src="https://images.unsplash.com/photo-1683629357963-adf2b1fa9ad9?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Luxury kitchen with marble countertop and white cabinetry">
+  </div>
+  <div class="room-info">
+    <div class="room-index">03 — Gather</div>
+    <h2>The Kitchen</h2>
+    <p>A marble island built for more than cooking. This is where the day begins and where it's talked through again at night, over something simple and well made.</p>
+    <ul class="feature-list">
+      <li>Book-matched marble island</li>
+      <li>Integrated professional appliances</li>
+      <li>Custom cabinetry</li>
+    </ul>
+  </div>
+</section>
+
+<section class="room reverse" id="living">
+  <div class="room-media">
+    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Luxury living room with marble fireplace and white sofas">
+  </div>
+  <div class="room-info">
+    <div class="room-index">04 — Belong</div>
+    <h2>The Living Room</h2>
+    <p>A marble fireplace anchors a room built for staying a while. Nothing here is precious enough to keep anyone from putting their feet up.</p>
+    <ul class="feature-list">
+      <li>Marble fireplace surround</li>
+      <li>Custom-upholstered seating</li>
+      <li>Curated art & shelving</li>
+    </ul>
+  </div>
+</section>
+
+<section class="closing">
+  <span class="eyebrow">Enquire</span>
+  <h2>A home worth living in, slowly.</h2>
+  <div class="gold-line"></div>
+  <a href="#top" class="cta-btn">Request a Private Viewing</a>
+</section>
+
+<footer>
+  HOME — Designed for those who notice the difference. <span>&#9670;</span>
+</footer>
+
+</body>
+</html>
