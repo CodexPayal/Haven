@@ -1,13 +1,17 @@
 ```markdown
 <div align="center">
 
-# HAVEN
+# 🏡 HAVEN
 
 ### A Private Residence
 
-A refined home showcase website built with HTML, CSS, and JavaScript.
+A responsive home showcase website with a refined, luxury-inspired interface.
 
-[Live Demo](YOUR_DEPLOYED_LINK)
+<br>
+
+<a href="YOUR_DEPLOYED_LINK">
+  <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Website-B08D57?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo">
+</a>
 
 </div>
 
@@ -15,17 +19,29 @@ A refined home showcase website built with HTML, CSS, and JavaScript.
 
 ## ✦ About
 
-Haven is a responsive single-page website that presents a private residence through elegant visuals, refined typography, and a calm, interior-inspired layout.
+Haven is a single-page frontend project that presents a private residence through elegant visuals, refined typography, and a calm interior-inspired layout.
 
-The project explores how thoughtful spacing, typography, and visual hierarchy can create a premium digital experience.
+The website features dedicated sections for the bedroom, bathroom, kitchen, and living room, with a focus on responsive design and visual presentation.
 
 ---
 
-## ✦ Spaces
+## ✦ Features
 
-| Bedroom | Bathroom | Kitchen | Living Room |
-|:---:|:---:|:---:|:---:|
-| Rest | Ritual | Gather | Belong |
+<div align="center">
+
+![Responsive](https://img.shields.io/badge/Responsive-Design-1A1815?style=flat-square)
+![Single Page](https://img.shields.io/badge/Single--Page-Website-1A1815?style=flat-square)
+![Smooth Scroll](https://img.shields.io/badge/Smooth-Scrolling-1A1815?style=flat-square)
+![Room Sections](https://img.shields.io/badge/Room-Sections-1A1815?style=flat-square)
+
+</div>
+
+- Full-screen hero section
+- Responsive layout for desktop and mobile
+- Smooth scrolling navigation
+- Dedicated room sections
+- Luxury-inspired typography and color palette
+- External image integration using Unsplash
 
 ---
 
@@ -33,23 +49,11 @@ The project explores how thoughtful spacing, typography, and visual hierarchy ca
 
 <div align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-0E0D0C?style=for-the-badge&logo=html5&logoColor=F6F3ED)
-![CSS3](https://img.shields.io/badge/CSS3-0E0D0C?style=for-the-badge&logo=css3&logoColor=F6F3ED)
-![JavaScript](https://img.shields.io/badge/JavaScript-0E0D0C?style=for-the-badge&logo=javascript&logoColor=F6F3ED)
+<img src="https://img.shields.io/badge/HTML5-0E0D0C?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+<img src="https://img.shields.io/badge/CSS3-0E0D0C?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+<img src="https://img.shields.io/badge/JavaScript-0E0D0C?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
 
 </div>
-
----
-
-## ✦ Features
-
-- Responsive design
-- Full-screen hero section
-- Smooth scrolling navigation
-- Dedicated room sections
-- Luxury-inspired visual design
-- Refined typography and color palette
-- Mobile-friendly layout
 
 ---
 
@@ -83,7 +87,9 @@ This project was created as a frontend practice exercise to strengthen my unders
 
 <div align="center">
 
-**HAVEN** · Designed for those who notice the difference.
+**HAVEN**
+
+Designed for those who notice the difference.
 
 Built with HTML · CSS · JavaScript
 
