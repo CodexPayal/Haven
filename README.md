@@ -1,35 +1,59 @@
 ```markdown
-# Haven
+<div align="center">
 
-A responsive home showcase website with a refined, luxury-inspired interface. Haven presents a private residence through carefully structured room sections, elegant typography, and a minimal visual design.
+# HAVEN
 
-## Live Demo
+### A Private Residence
 
-[View Live Website](YOUR_DEPLOYED_LINK)
+A refined home showcase website built with HTML, CSS, and JavaScript.
 
-## Overview
+[Live Demo](YOUR_DEPLOYED_LINK)
 
-Haven is a single-page frontend project designed to showcase the spaces of a home in a visually engaging and responsive layout.
+</div>
 
-The website includes dedicated sections for the bedroom, bathroom, kitchen, and living room, along with a full-screen hero section and smooth navigation.
+---
 
-## Features
+## ✦ About
 
-- Responsive layout for desktop and mobile devices
-- Full-screen hero section with visual presentation
+Haven is a responsive single-page website that presents a private residence through elegant visuals, refined typography, and a calm, interior-inspired layout.
+
+The project explores how thoughtful spacing, typography, and visual hierarchy can create a premium digital experience.
+
+---
+
+## ✦ Spaces
+
+| Bedroom | Bathroom | Kitchen | Living Room |
+|:---:|:---:|:---:|:---:|
+| Rest | Ritual | Gather | Belong |
+
+---
+
+## ✦ Tech Stack
+
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-0E0D0C?style=for-the-badge&logo=html5&logoColor=F6F3ED)
+![CSS3](https://img.shields.io/badge/CSS3-0E0D0C?style=for-the-badge&logo=css3&logoColor=F6F3ED)
+![JavaScript](https://img.shields.io/badge/JavaScript-0E0D0C?style=for-the-badge&logo=javascript&logoColor=F6F3ED)
+
+</div>
+
+---
+
+## ✦ Features
+
+- Responsive design
+- Full-screen hero section
 - Smooth scrolling navigation
-- Dedicated sections for individual rooms
-- Refined typography and luxury-inspired color palette
-- Clean, structured, and accessible HTML layout
-- External image integration using Unsplash
+- Dedicated room sections
+- Luxury-inspired visual design
+- Refined typography and color palette
+- Mobile-friendly layout
 
-## Tech Stack
+---
 
-- HTML5
-- CSS3
-- JavaScript
-
-## Project Structure
+## ✦ Project Structure
 
 ```text
 Haven/
@@ -38,39 +62,30 @@ Haven/
 └── script.js
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+## ✦ Getting Started
 
-A modern web browser and a code editor such as VS Code.
+```bash
+git clone YOUR_REPOSITORY_URL
+cd Haven
+```
 
-### Run Locally
-
-1. Clone the repository:
-
-   ```bash
-   git clone YOUR_REPOSITORY_URL
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd Haven
-   ```
-
-3. Open `index.html` in your browser.
-
-   Alternatively, use the Live Server extension in VS Code.
-
-## Purpose
-
-This project was created as a frontend practice exercise to strengthen my understanding of HTML structure, CSS layouts, responsive design, and basic JavaScript integration.
-
-## Author
-
-**Priyanka Swain**
+Open `index.html` in your browser, or use Live Server in VS Code.
 
 ---
 
-Built with HTML, CSS, and JavaScript.
+## ✦ Purpose
+
+This project was created as a frontend practice exercise to strengthen my understanding of HTML structure, CSS layouts, responsive design, and JavaScript integration.
+
+---
+
+<div align="center">
+
+**HAVEN** · Designed for those who notice the difference.
+
+Built with HTML · CSS · JavaScript
+
+</div>
 ```
