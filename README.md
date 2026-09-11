@@ -1,37 +1,35 @@
 ```markdown
-# Haven 🏡
+# Haven
 
-A modern luxury home showcase website designed to present a private residence through elegant visuals, refined typography, and a clean interior-inspired layout.
+A responsive home showcase website with a refined, luxury-inspired interface. Haven presents a private residence through carefully structured room sections, elegant typography, and a minimal visual design.
 
-## ✨ Overview
+## Live Demo
 
-Haven is a responsive single-page website that showcases different spaces of a home, including:
+[View Live Website](YOUR_DEPLOYED_LINK)
 
-- Bedroom
-- Bathroom
-- Kitchen
-- Living Room
+## Overview
 
-The design focuses on simplicity, comfort, and a premium residential experience.
+Haven is a single-page frontend project designed to showcase the spaces of a home in a visually engaging and responsive layout.
 
-## 🚀 Features
+The website includes dedicated sections for the bedroom, bathroom, kitchen, and living room, along with a full-screen hero section and smooth navigation.
 
-- Elegant luxury-inspired design
-- Responsive layout for desktop and mobile
-- Full-screen hero section
+## Features
+
+- Responsive layout for desktop and mobile devices
+- Full-screen hero section with visual presentation
 - Smooth scrolling navigation
-- Dedicated sections for each room
-- Premium typography and color palette
-- Interactive navigation links
+- Dedicated sections for individual rooms
+- Refined typography and luxury-inspired color palette
+- Clean, structured, and accessible HTML layout
 - External image integration using Unsplash
 
-## 🛠️ Technologies Used
+## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Haven/
@@ -40,43 +38,39 @@ Haven/
 └── script.js
 ```
 
-## ▶️ How to Run
+## Getting Started
 
-1. Clone or download this repository.
-2. Open the project folder in VS Code.
+### Prerequisites
+
+A modern web browser and a code editor such as VS Code.
+
+### Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Haven
+   ```
+
 3. Open `index.html` in your browser.
 
-You can also use the **Live Server** extension in VS Code for a better development experience.
+   Alternatively, use the Live Server extension in VS Code.
 
-## 🎨 Design
+## Purpose
 
-The website uses:
+This project was created as a frontend practice exercise to strengthen my understanding of HTML structure, CSS layouts, responsive design, and basic JavaScript integration.
 
-- Ivory and charcoal color palette
-- Subtle gold accents
-- Cormorant Garamond for headings
-- Manrope for body text
-- Responsive room sections
-- Luxury interior photography
-
-## 📌 Project Purpose
-
-This project was created to practice and demonstrate frontend development concepts such as:
-
-- Semantic HTML structure
-- CSS layouts and responsive design
-- Typography and visual hierarchy
-- Navigation and smooth scrolling
-- Building a complete multi-section webpage
-
-## 👩‍💻 Author
+## Author
 
 **Priyanka Swain**
 
-- GitHub: https://github.com/CodexPayal
-- LinkedIn: https://www.linkedin.com/in/priyanka-swain-1b4457382/
-
 ---
 
-Made with HTML, CSS & JavaScript.
+Built with HTML, CSS, and JavaScript.
 ```
